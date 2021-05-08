@@ -6,10 +6,12 @@ namespace TicTacToeGame
     {
         static void Main(string[] args)
         {
+            char[] board = new char[10];
             TicTacToeGame game = new TicTacToeGame();
             game.GameBoard();
             game.Choice();
-            game.showBoard();
+            game.showBoard(board);
+            game.selectPosition(board);
         }
     }
 }
